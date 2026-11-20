@@ -1,0 +1,69 @@
+title: "[Feature Request] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## TDHS Shelter App Feature Request
+
+        Thank you for helping improve the TDHS Shelter App!
+
+        Please describe your idea in everyday language.
+        You don't need to know anything about software development.
+
+        Do not include confidential shelter or personal information.
+
+  - type: textarea
+    id: feature
+    attributes:
+      label: What would you like the application to do?
+      description: Describe the feature or improvement you would like.
+      placeholder: I would like to be able to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Explain how this would make your work easier.
+      placeholder: Currently, we have to...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often would you use this?
+      options:
+        - Multiple times per day
+        - Daily
+        - Weekly
+        - Monthly
+        - Occasionally
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area of the application?
+      options:
+        - Animals
+        - Medical
+        - Kennels and Housing
+        - Volunteers
+        - Adoptions
+        - Dashboard
+        - Administration
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Anything else that would help explain your idea?
+    validations:
+      required: false
