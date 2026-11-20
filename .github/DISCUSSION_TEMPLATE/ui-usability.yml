@@ -1,0 +1,90 @@
+title: "[UI Improvement] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## TDHS Shelter App - UI & Usability Feedback
+
+        Thank you for helping make the application easier to use!
+
+        Use this form to suggest improvements to the appearance,
+        navigation, accessibility, or everyday usability of the app.
+
+        You don't need technical knowledge to submit feedback.
+
+        IMPORTANT:
+        Do not include passwords, confidential records,
+        or personal information in your submission.
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: What would you like improved?
+      description: Describe the part of the application you would like changed.
+      placeholder: I think it would be easier if...
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_experience
+    attributes:
+      label: What is difficult about the current experience?
+      description: Explain what makes the current design or workflow difficult.
+      placeholder: Currently, when I try to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: How would you prefer it to work?
+      description: Describe your preferred experience, if you have an idea.
+      placeholder: It would be better if...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area of the application?
+      options:
+        - Dashboard
+        - Navigation and Sidebar
+        - Animals
+        - Medical
+        - Kennels and Housing
+        - Volunteers
+        - Adoptions
+        - Administration
+        - Login and Account
+        - General Appearance
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: What device were you using?
+      options:
+        - Desktop Computer
+        - Laptop
+        - iPhone
+        - Android Phone
+        - iPad
+        - Android Tablet
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information or screenshots
+      description: |
+        Include any other details that may help explain your suggestion.
+
+        Screenshots are welcome, but remove personal or
+        confidential information before uploading.
+    validations:
+      required: false
