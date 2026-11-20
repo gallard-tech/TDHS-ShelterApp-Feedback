@@ -1,0 +1,106 @@
+title: "[Bug Report] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## TDHS Shelter App Bug Report
+
+        Thank you for reporting a problem!
+
+        Please describe what happened so we can investigate.
+
+        You don't need technical knowledge to complete this form.
+
+        IMPORTANT:
+        Do not include passwords, personal information,
+        confidential animal records, or other sensitive data.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What went wrong?
+      description: Describe the problem you experienced.
+      placeholder: When I tried to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we reproduce the problem?
+      description: Describe what you clicked or entered before the problem occurred.
+      placeholder: |
+        1. I opened...
+        2. I clicked...
+        3. The application...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: I expected the application to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened?
+      placeholder: Instead, the application...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area of the application?
+      options:
+        - Dashboard
+        - Animals
+        - Medical
+        - Kennels and Housing
+        - Volunteers
+        - Adoptions
+        - Administration
+        - Login and Account
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: What device were you using?
+      options:
+        - Desktop Computer
+        - Laptop
+        - iPhone
+        - Android Phone
+        - iPad
+        - Android Tablet
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Which browser were you using?
+      description: Optional
+      placeholder: Chrome, Firefox, Safari, Edge...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: |
+        Include any additional details that might help.
+
+        Screenshots are welcome, but please remove personal
+        or confidential information before uploading.
+    validations:
+      required: false
